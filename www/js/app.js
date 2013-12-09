@@ -20,11 +20,11 @@ angular.module('starter', ['ionic', 'ngRoute', 'ngAnimate', 'starter.services', 
     controller: 'AppCtrl'
   });
 
-  // if the url matches something like /pet/2 then this route
-  // will fire off the PetCtrl controller (controllers.js)
-  $routeProvider.when('/pet/:petId', {
-    templateUrl: 'templates/pet.html',
-    controller: 'PetCtrl'
+  // if the url matches something like /page/2 then this route
+  // will fire off the PageCtrl controller (controllers.js)
+  $routeProvider.when('/page/:pageId', {
+    templateUrl: 'templates/page.html',
+    controller: 'PageCtrl'
   });
 
   // if none of the above routes are met, use this fallback

@@ -1,0 +1,13 @@
+<nav-page title="page.title">
+  <content has-header="true" padding="true">
+    <list ng-show="page.links">
+      <link-item ng-repeat="link in page.links" type="item-text-wrap" href="#/page/{{link.nextId}}">
+        <h3>{{link.title}}</h3>
+
+        <p>{{link.description}}</p>
+        </item>
+      </link-item>
+    </list>
+    <div ng-show="page.content" ng-bind-html="page.content"></div>
+  </content>
+</nav-page>
